@@ -1,4 +1,6 @@
 package co.edu.uniquindio.poo.tarea.model;
 
-public class EstrategiaTarifa {
+public interface EstrategiaTarifa {
+    double calcularCosto(int horas);
+    String getNombre();
 }
