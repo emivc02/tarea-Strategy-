@@ -1,12 +1,12 @@
 package co.edu.uniquindio.poo.tarea.model;
 public class Ticket {
 
-    private String placa;
+    private String id;
     private int horas;
     private EstrategiaTarifa estrategia;
 
-    public Ticket(String placa, int horas, EstrategiaTarifa estrategia) {
-        this.placa = placa;
+    public Ticket(String id, int horas, EstrategiaTarifa estrategia) {
+        this.id = id;
         this.horas = horas;
         this.estrategia = estrategia;
     }
@@ -20,10 +20,9 @@ public class Ticket {
     }
 
     public void mostrarResumen() {
-        System.out.println("Placa: " + placa);
+        System.out.println("Id: " + id;
         System.out.println("Tipo de usuario: " + estrategia.getNombre());
         System.out.println("Horas: " + horas);
         System.out.println("Total a pagar: $" + calcularTotal());
-        System.out.println("-------------------------");
     }
 }
