@@ -20,7 +20,7 @@ public class Ticket {
     }
 
     public void mostrarResumen() {
-        System.out.println("Id: " + id;
+        System.out.println("Id: " + id);
         System.out.println("Tipo de usuario: " + estrategia.getNombre());
         System.out.println("Horas: " + horas);
         System.out.println("Total a pagar: $" + calcularTotal());
