@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.tarea.model;
 
-public class TarifaDocente {
+public class TarifaDocente implements EstrategiaTarifa {
     private final double VALOR_DIA;
 
     public TarifaDocente(double valorDia) {
@@ -16,5 +16,4 @@ public class TarifaDocente {
     public String getNombre() {
         return "Docente / Administrativo";
     }
-
 }

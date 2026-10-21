@@ -1,6 +1,5 @@
 package co.edu.uniquindio.poo.tarea.app;
 public class App {
-
     public static EstrategiaTarifa elegirTarifa(String tipo) {
         EstrategiaTarifa estrategia = null;
         switch (tipo) {
@@ -30,6 +29,8 @@ public class App {
         ticket2.mostrarResumen();
         ticket3.mostrarResumen();
 
+        // Cambio de tarifa en tiempo de ejecución:
+        // el visitante presenta carné de estudiante
         System.out.println("El visitante presenta carné de estudiante");
         ticket3.setEstrategia(new TarifaEstudiante());
         ticket3.mostrarResumen();
